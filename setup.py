@@ -23,8 +23,6 @@ except ImportError:
 
 # pull long description from README
 this_directory = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(this_directory, 'README.md')) as f:
-    long_description = f.read()
 
 
 # get this package's version from dbt/adapters/<name>/__version__.py
@@ -61,15 +59,11 @@ dbt_core_version = "1.3.0"
 description = """The MySQL adapter plugin for dbt"""
 
 this_directory = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(this_directory, 'README.md')) as f:
-    long_description = f.read()
 
 setup(
     name=package_name,
     version=package_version,
     description=description,
-    long_description=long_description,
-    long_description_content_type='text/markdown',
     author="Doug Beatty",
     author_email="doug.beatty@gmail.com",
     url="https://github.com/dbeatty10/dbt-mysql",
