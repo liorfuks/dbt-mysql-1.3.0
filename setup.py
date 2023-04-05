@@ -5,7 +5,7 @@ import re
 
 if sys.version_info < (3, 7) or sys.version_info >= (3, 11):
     print('Error: dbt-mysql does not support this version of Python.')
-    print('Please install Python 3.7 or higher but less than 3.10.')
+    print('Please install Python 3.7 or higher but less than 3.11.')
     sys.exit(1)
 
 
